@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHRUV PARASHAR - Profile</title>
+    
+    <!-- All CSS styling is consolidated here, separate from the HTML structure -->
+    <style>
+        :root {
+    --primary-color: #ff4500; /* Orange-red */
+    --secondary-color: #cc3700; /* Darker orange-red */
+    --background-color: #000000; /* Black */
+    --surface-color: #1a1a1a; /* Dark gray for surface contrast */
+    --text-main: #ffffff; /* White text */
+    --text-muted: #cccccc; /* Light gray for muted text */
+}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.05), 0 2px 4px -1px rgba(255, 255, 255, 0.03);
+            overflow: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            color: #000000; /* Black text on orange background for readability */
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2.5rem 2rem;
+            border-bottom: 1px solid #333333;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.75rem;
+            margin-bottom: 1.25rem;
+            display: inline-block;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 0.25rem;
+        }
+
+        /* About Section */
+        .about-text {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Skills Section */
+        .skills-list {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skills-list li {
+            background-color: var(--background-color);
+            color: var(--text-main);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* Pill shape */
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: 1px solid #333333;
+        }
+
+        /* Projects Section */
+        .projects-list {
+            list-style-type: none;
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .project-item {
+            background-color: var(--surface-color);
+            border: 1px solid #333333;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(255, 69, 0, 0.15); /* Subtle orange-red glow */
+}
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-title a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .project-title a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        .project-description {
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            background-color: #0a0a0a;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header {
+                padding: 2rem 1rem;
+            }
+            section {
+                padding: 1.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>DHRUV PARASHAR</h1>
+            <p>B.TECH. 2ND YEAR STUDENT</p>
+        </header>
+
+        <main>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p class="about-text">
+                    I am a second-year engineering student passionate about leveraging technology to solve real-world problems. Always eager to learn and build, I thrive on turning complex challenges into innovative, efficient solutions.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Project Management</li>
+                    <li>Python</li>
+                    <li>Public Speaking</li>
+                    <li>Adobe Creative Suite</li>
+                </ul>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul class="projects-list">
+                    
+                    <li class="project-item">
+                        <div class="project-title">
+                            <a href=https://github.com/throwaway099/python-basics-25BCON1607>
+                                Python Basic Program Commits
+                            </a>
+                        </div>
+                        <p class="project-description">
+                            This is CW/HW of Prompt Engineering Module 5 where I learned to use GitHub and made basic Python program commits like Factorial, Fibonaccia and Struct programs.                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                Connect with me: 
+                <a href="mailto:officialdhruvparashar@gmail.com" style="color: var(--primary-color); text-decoration: none;">Email</a> | 
+                <a href="https://www.linkedin.com/in/dhruv-parashar-0b37b4306/" target="_blank" style="color: var(--primary-color); text-decoration: none;">LinkedIn</a>
+            </p>
+            <p style="margin-top: 1rem;">&copy; 2026 DHRUV PARASHAR. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
